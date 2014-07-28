@@ -1,0 +1,579 @@
+#ajax_loading {
+  /*background: -moz-linear-gradient(center top , #95C715 0%, #7BA60D 100%) repeat scroll 0 0 transparent;*/
+  background: url("http://i34.servimg.com/u/f34/18/17/62/92/ajaxlo10.png") repeat-x scroll 0 0 transparent;
+  border: 1px solid #7BA60D;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2), 0 -1px 0 rgba(255, 255, 255, 0.2) inset;
+  color: #FFFFFF;
+  left: 46%;
+  padding: 5px 0 8px;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 8%;
+  z-index: 10000;
+}
+                #board_stats ul {
+                    text-align: center;
+                }
+                .ipsType_small {
+                    font-size: 12px;
+                }
+                #board_stats li {
+                    margin-right: 20px;
+                }
+                .ipsList_inline > li:first-child {
+                    margin-left: 0;
+                }
+                .ipsList_inline > li {
+                    display: inline-block;
+                    margin: 0 3px;
+                }
+                #board_stats .value {
+                    background: none repeat scroll 0 0 #E2E2E2;
+                    border-radius: 2px 2px 2px 2px;
+                    color: #4A4A4A;
+                    display: inline-block;
+                    font-weight: bold;
+                    margin-right: 3px;
+                    padding: 2px 6px;
+                }
+				.cke_dialog_tabs {
+				    background: none repeat scroll 0 0 #2C5687 !important;
+				    margin: -4px 0 -1px;
+				    padding-left: 5px;
+				    z-index: 2;
+				}
+				.cke_dialog_tabs *, .cke_dialog_tabs a:hover, .cke_dialog_tabs a:link, .cke_dialog_tabs a:visited, .cke_dialog_tabs a:active {
+				    background: none repeat scroll 0 0 transparent;
+				    border: 0 none;
+				    border-collapse: collapse;
+				    color: #444444;
+				    cursor: auto;
+				    font: 11px "Helvetica Neue",Arial,Helvetica,Tahoma,Verdana,Sans-Serif !important;
+				    height: auto;
+				    margin: 0;
+				    padding: 0;
+				    text-align: left;
+				    text-decoration: none;
+				    vertical-align: baseline;
+				    white-space: nowrap;
+				    width: auto;
+				}
+				.cke_dialog_tabs a.cke_dialog_tab_selected, .cke_dialog_tabs a.cke_dialog_tab_selected:link, .cke_dialog_tabs a.cke_dialog_tab_selected:active, .cke_dialog_tabs a.cke_dialog_tab_selected:hover, .cke_dialog_tabs a.cke_dialog_tab_selected:visited {
+				    background: none repeat scroll 0 0 #EBF0F3 !important;
+				    border-bottom: 1px solid #EBF0F3;
+				    cursor: default !important;
+				    font-weight: normal;
+				}
+				.cke_dialog_tabs a.cke_dialog_tab {
+				    background-color: #DEDEDE;
+				}
+				.cke_dialog_tabs a.cke_dialog_tab:hover {
+				    background-color: #FFFFFF;
+				}
+				.cke_dialog_tabs a.cke_dialog_tab, .cke_dialog_tabs a.cke_dialog_tab:link, .cke_dialog_tabs a.cke_dialog_tab:active, .cke_dialog_tabs a.cke_dialog_tab:hover, .cke_dialog_tabs a.cke_dialog_tab:visited {
+				    background: none repeat scroll 0 0 #EBF0F3
+				    color: #444444;
+				    cursor: pointer;
+				    display: inline-block;
+				    height: 14px;
+				    padding: 5px 12px 2px;
+				}
+.popupWrapper {
+    background-color: rgba(70, 70, 70, 0.6);
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.7);
+    padding: 4px;
+}
+.popupInner {
+    background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 500px;
+}
+.ipsSmileyTray {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #E4EBF2;
+    border-color: -moz-use-text-color #D5DDE5 #D5DDE5;
+    border-image: none;
+    border-radius: 0 0 3px 3px;
+    border-right: 1px solid #D5DDE5;
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+    box-shadow: 0 1px 0 0 #EFF3F8 inset, 0 2px 3px rgba(0, 0, 0, 0.2);
+    height: 32px;
+    margin: 0 auto;
+    min-width: 600px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 4px 24px;
+    position: relative;
+    text-align: center;
+    width: 75%;
+}
+.ipsSmileyTray img.bbc_emoticon {
+    cursor: pointer;
+    margin: 6px 3px 0;
+    max-height: 30px;
+    max-width: 30px;
+    opacity: 0.8;
+}
+.ipsSmileyTray .ipsSmileyTray_next {
+    background: url("http://i78.servimg.com/u/f78/18/17/62/92/next10.png") no-repeat scroll 0 10px transparent;
+    cursor: pointer;
+    display: inline-block;
+    height: 30px;
+    position: absolute;
+    right: 5px;
+    top: 4px;
+    width: 13px;
+}
+.ipsSmileyTray .ipsSmileyTray_prev {
+    background: url("http://i78.servimg.com/u/f78/18/17/62/92/prev10.png") no-repeat scroll 0 10px transparent;
+    cursor: pointer;
+    display: inline-block;
+    height: 30px;
+    left: 5px;
+    position: absolute;
+    top: 4px;
+    width: 13px;
+}
+        .header {
+            background: none repeat scroll 0 0 #B6C7DB;
+            color: #1D3652;
+        }
+        table.ipb_table th {
+            font-size: 11px;
+            font-weight: bold;
+            padding: 8px 6px;
+        }
+        caption, th {
+            text-align: left;
+        }        
+        body {
+            font: 13px helvetica,arial,sans-serif;
+        }
+        html, body {
+            color: #5A5A5A;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        td {
+            padding: 3px;
+        }
+        .date-and-time {
+            float: right;
+            margin-right: 4px;
+        }
+        .chatbox_row_1, .chatbox_row_2 {
+            background-color: #F1F6F9;
+            border: 1px solid #D5DDE5;
+            padding: 6px;
+        }
+        .chatbox_row_2 {
+            border-top: 0;
+        }
+.shoutbox_text, .shoutbox_text > dl {
+  max-height: 100px;
+  overflow: auto;
+  word-wrap: break-word;
+}
+.shoutbox_text img {
+  max-height: 150px;
+  max-width: 150px;
+  transition: all 0.2s ease-in-out 0.2s;
+}
+.shoutbox_text img:hover {
+  cursor: url("http://i34.servimg.com/u/f34/18/17/62/92/lupa0110.png"), default;
+  max-height: 80%;
+  max-width: 80%;
+  transition: all 0.4s ease-in-out 0.4s;
+}
+#column_04 {
+  max-width: 730px;
+}
+
+#template_toolbar li#t_status.loading {
+  background-image: url("images/loading_white.gif");
+  background-position: 0 6px;
+  background-repeat: no-repeat;
+}
+
+#template_toolbar li#t_status {
+  background: none repeat scroll 0 0 transparent;
+  border: 0 none;
+  color: #6E6E6E;
+  cursor: default;
+  font-size: 11px;
+  height: 20px;
+  padding: 6px 0 0 25px;
+  width: 90px;
+}
+
+.desc, .desc.blend_links a, p.posted_info {
+            color: #777777;
+            font-size: 12px;
+        }
+        .right {
+            float: right;
+        }
+        a {
+            color: #225985;
+            text-decoration: none;
+        }
+        .ipsUserPhoto_icon {
+            height: 16px;
+            width: 16px;
+        }
+        .ipsUserPhoto {
+            background: none repeat scroll 0 0 #FFFFFF;
+            border: 1px solid #D5D5D5;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+            padding: 1px;
+        }
+        .maintitle {
+            background: url("http://i78.servimg.com/u/f78/18/17/62/92/mainti11.png") repeat-x scroll center top #2C5687;
+            border-color: #316897;
+            border-radius: 4px 4px 0 0;
+            border-style: solid;
+            border-width: 1px 1px 0;
+            box-shadow: 0 1px 0 #528CBC inset;
+            color: #FFFFFF !important;
+            font-family: helvetica,arial,sans-serif !important;
+            font-size: 16px !important;
+            font-weight: 300 !important;
+            padding: 10px 10px 11px;
+        }
+        .maintitle .toggle {
+            background: url("http://i78.servimg.com/u/f78/18/17/62/92/cat_mi11.png") no-repeat scroll 0 0 transparent;
+            display: block;
+            height: 25px;
+            outline: 0 none;
+            text-indent: -3000em;
+            visibility: hidden;
+            width: 25px;
+        }
+        .maintitle:hover .toggle {
+            visibility: visible
+        }
+        .maintitle a {
+            color: #FFFFFF !important;
+        }
+        .right {
+            float: right;
+        }
+        img, .input_check, .input_radio {
+            vertical-align: middle;
+        }
+        .ipsBox, .ipsPad {
+            padding: 9px;
+        }
+        .ipsBox {
+            background: none repeat scroll 0 0 #EBF0F3;
+        }
+        .ipsBox_container {
+            background: none repeat scroll 0 0 #FFFFFF;
+            border: 1px solid #DBE4EF;
+        }
+        table.ipb_table {
+            border-collapse: collapse;
+            line-height: 1.3;
+            width: 100%;
+        }
+        .row2, .post_block.row2 {
+            background-color: #F1F6F9;
+        }
+        #shoutbox-shouts-table .row2 td {
+            border-bottom: 1px solid #D5DDE5;
+            vertical-align: middle;
+        }
+        table.shoutbox_table tr td {
+            padding: 4px;
+        }
+        table.ipb_table td {
+            border-bottom: 1px solid #F3F3F3;
+            padding: 10px;
+        }
+        .message {
+            background: none repeat scroll 0 0 #EBFCDF;
+            border: 1px solid #A4CFA4;
+            color: #0E440E;
+            font-size: 12px;
+            line-height: 1.6;
+            padding: 10px;
+        }
+        strong.bbc {
+            font-weight: bold !important;
+        }
+        .row1, .post_block.row1 {
+            background-color: #FFFFFF;
+        }
+        .short {
+            text-align: center;
+        }
+        .input_submit {
+            background: url("http://i78.servimg.com/u/f78/18/17/62/92/topic_12.png") repeat-x scroll center top #212121;
+            border-color: #212121;
+            border-radius: 3px 3px 3px 3px;
+            box-shadow: 0 1px 0 0 #5C5C5C inset, 0 2px 3px rgba(0, 0, 0, 0.2);
+            color: #FFFFFF;
+            border-style: solid;
+            border-width: 1px;
+            cursor: pointer;
+            padding: 4px 10px;
+			/*margin-left: 4px;*/
+            text-decoration: none;
+        }
+        .input_submit:hover {
+            color: #FFFFFF;
+        }
+        input, select {
+            font-family: helvetica,arial,sans-serif !important;
+            font-size: 13px !important;
+            font-style: normal !important;
+            font-variant: normal !important;
+            font-weight: normal !important;
+        }
+.input_text, .ipsTagBox_wrapper {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #848484 #C1C1C1 #E1E1E1;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 4px;
+}
+.input_text:focus {
+    border-color: #4E4E4E #7C7C7C #A3A3A3;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+input.inactive, select.inactive, textarea.inactive {
+    color: #C4C4C4;
+}
+.input_text.error {
+    background-color: #F3DDDD;
+}
+.input_text.accept {
+    background-color: #F1F6EC;
+}        
+		#message {
+            background: none repeat scroll 0 0 #FFFFFF;
+            border-color: #848484 #C1C1C1 #E1E1E1;
+            border-radius: 2px 2px 2px 2px;
+            border-style: solid;
+            border-width: 1px;
+            margin-right: 4px;
+            padding: 4px;
+        }
+        .input_submit.alt:hover {
+            color: #464646;
+        }
+        .input_submit.alt {
+            background: none repeat scroll 0 0 #E2E9F0;
+            border-color: #DAE2EA;
+            box-shadow: 0 1px 0 0 #EFF3F8 inset, 0 2px 3px rgba(0, 0, 0, 0.2);
+            color: #464646;
+            text-decoration: none;
+        }
+        #shoutbox-shouts-table {
+            border: 1px solid #D5DDE5;
+        }
+        #shouts-global-resizer, #shouts-resizer {
+            background-color: #DBE2EC;
+            cursor: n-resize;
+            height: 6px;
+        }
+#shoutbox-smilies-button_menucontent span.pager {
+    display: inline-block;
+    width: 20px;
+}
+#shoutbox-smilies-button_menucontent table {
+    border: 1px solid #D5DDE5;
+    border-collapse: separate;
+}
+div.sceditor-toolbar {
+    -moz-user-select: none;
+    background: none repeat scroll 0 0 padding-box #F7F7F7;
+    border-bottom: 1px solid silver;
+    border-radius: 3px 3px 0 0;
+    line-height: 0;
+    overflow: hidden;
+    padding: 3px 5px 2px;
+}
+.sceditor-container, .sceditor-container div, div.sceditor-dropdown, div.sceditor-dropdown div {
+    margin: 0;
+    padding: 0;
+    z-index: 3;
+}
+div.sceditor-group {
+    background: none repeat scroll 0 0 padding-box #DDDDDD;
+    border-bottom: 1px solid #AAAAAA;
+    border-radius: 3px 3px 3px 3px;
+    display: inline-block;
+    margin: 1px 5px 1px 0;
+    padding: 1px;
+}
+.sceditor-button, .sceditor-button div {
+    display: block;
+}
+.sceditor-button {
+    background-clip: padding-box;
+    border-radius: 3px 3px 3px 3px;
+    cursor: pointer;
+    float: left;
+    height: 20px;
+    padding: 3px 5px;
+    text-indent: -9999px;
+    width: 16px;
+}
+.popupInner h3 {
+    background: url("http://forum.autoitbrasil.com/public/style_images/master/maintitle.png") repeat-x scroll center top #2C5687;
+    border-color: #316897;
+    border-style: solid;
+    border-width: 1px 1px 0;
+    box-shadow: 0 1px 0 #528CBC inset;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 8px 10px 9px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.message.error {
+    background-color: #F3E3E6;
+    border-color: #E599AA;
+    color: #80001C;
+}
+.popupClose {
+    position: absolute;
+    right: 16px;
+    top: 12px;
+}
+.clickable {
+    cursor: pointer;
+}
+
+/* blockquote quote, spoiler */
+.codebox.spoiler, blockquote {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: none repeat scroll 0 0 #F7F7F7;
+  border-image: none;
+  border-radius: 5px 5px 5px 5px;
+  border-style: solid;
+  border-width: 2px;
+  margin: 0;
+  overflow-x: auto;
+}
+cite, .codebox.spoiler dt {
+	background: url("http://i34.servimg.com/u/f34/18/17/62/92/captur13.png") repeat-x scroll 0 0 #F2F2F2;
+    border-radius: 5px 5px 0 0;
+    font-size: 12px;
+    font-weight: 700;
+    overflow-x: auto;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+    padding-right: 10px;
+	padding: 8px 10px;
+}
+.codebox.spoiler {
+	padding: 5px 5px 0;
+}
+.codebox.spoiler dt {
+    cursor: pointer;
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-top: -4px;
+    padding-bottom: 4px;
+    padding-top: 0;
+}
+.spoiler_content.hidden {
+  display: block;
+}
+.spoiler_content {
+  display: none;
+}
+.codebox dt {
+  border-bottom: 1px dotted #DDDDDD;
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-top: -4px;
+    padding-bottom: 4px;
+    padding-top: 0;  
+}
+
+.codebox dd {
+    background: none repeat scroll 0 0 #F7F7F7 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+/* syntaxhighlighter */
+code.punbb_block, pre.punbb_block {
+  background-color: #FAFAFA !important;
+  border: 1px solid #C9C9C9 !important;
+  color: #000000;
+  font-family: Consolas,"Bitstream Vera Sans Mono","Andale Mono",Monaco,"DejaVu Sans Mono","Lucida Console",monospace !important;
+  font-size: 11px !important;
+  line-height: 110% !important;
+  max-height: 250px !important;
+  overflow: auto !important;
+  padding: 5px !important;
+  white-space: pre-wrap !important;
+  width: auto !important;
+}
+.punbbtop {
+    background: url("http://i34.servimg.com/u/f34/18/17/62/92/punbb_11.png") no-repeat scroll right center #E3E9F2;
+    color: #1D3652;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 100%;
+    /*margin-left: 10px;*/
+    margin-top: 5px;
+    padding: 2px 1px 2px 3px;
+}
+.punbbtop button {
+    background: -moz-linear-gradient(center top , #EDEDED 5%, #DFDFDF 100%) repeat scroll 0 0 #EDEDED;
+    border: 1px solid #BBBBBB;
+    border-radius: 3px 3px 3px 3px;
+    color: #1D3652;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 10px;
+    padding: 0 6px;
+    text-decoration: none;
+}
+.punbbtop button:hover {
+    background: -moz-linear-gradient(center top , #DFDFDF 5%, #EDEDED 100%) repeat scroll 0 0 #DFDFDF;
+    border-color: #9A9A9A;
+    color: #3D70A3;
+}
+.punbbtop button:active {
+    position: relative;
+    top: 1px;
+}
+pre.punbb_block.expand,
+code.punbb_block.expand {
+    max-height: 100% !important;
+}
+
+/* programando.forum-pro.net */
+.maintitle_programando {
+  background-color: #E04547;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25) inset;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 16px;
+}
+.cke_dialog_tabs.programando {
+  background: none repeat scroll 0 0 #E04547 !important;
+}
